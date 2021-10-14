@@ -1,6 +1,6 @@
 {
   "name": "jsnote-2g0jy",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "",
   "bin": "dist/index.js",
   "publishConfig": {

@@ -1,6 +1,7 @@
 # JSNote
 
 A notebook with interactive coding environment!
+![image](https://user-images.githubusercontent.com/22570444/137446217-e34f4664-2085-42d1-a69a-a42219c31c4b.png)
 
 ## Disclaimer
 This project is inspired by an amazing course called [React and Typescript: Build a Portfolio Project](https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project/) by [Stefen Grider](https://www.udemy.com/user/sgslo/)! 🌈🌈

@@ -1,0 +1,11 @@
+.util-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.util-panel:hover {
+  opacity: 1;
+}

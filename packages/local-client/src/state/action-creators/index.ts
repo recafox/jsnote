@@ -9,6 +9,7 @@ import {
   DeleteCellAction,
   MoveCellAction,
   InsertCellAfterAction,
+  ToggleModalAction,
 } from '../actions';
 import bundle from '../../bundler';
 import { RootState } from '../reducers';
@@ -103,5 +104,12 @@ export const saveCells = () => {
         payload: err.message,
       });
     }
+  };
+};
+
+export const toggleModal = (openStatus: boolean): ToggleModalAction => {
+  return {
+    type: ActionType.TOGGLE_MODAL,
+    payload: openStatus,
   };
 };

@@ -70,6 +70,11 @@ export interface SaveCellsErrorAction {
   payload: string;
 }
 
+export interface ToggleModalAction {
+  type: ActionType.TOGGLE_MODAL;
+  payload: boolean;
+}
+
 export type Action =
   | MoveCellAction
   | DeleteCellAction
@@ -80,4 +85,5 @@ export type Action =
   | FetchCellsAction
   | FetchCellsComplete
   | FetchCellsError
-  | SaveCellsErrorAction;
+  | SaveCellsErrorAction
+  | ToggleModalAction;

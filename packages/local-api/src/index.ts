@@ -2,6 +2,7 @@ import express from 'express';
 import { createProxyMiddleware } from 'http-proxy-middleware';
 import path from 'path';
 import { createCellsRouter } from './routes/cells';
+import { downloadRouter } from './routes/download';
 
 export const serve = (
   port: number,
@@ -11,6 +12,7 @@ export const serve = (
 ) => {
   const app = express();
   app.use(createCellsRouter(filename, dir));
+  app.use(downloadRouter(filename, dir));
   if (useProxy) {
     app.use(
       createProxyMiddleware({

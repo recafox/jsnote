@@ -32,7 +32,12 @@ const App = () => {
         <HelpModal />
         <div className="util-panel">
           <button className="button is-primary is-small download-btn" onClick={() => { download() }}>Download</button>
-          <button className="button is-primary is-small" onClick={() => { toggleModal(true) }}>Help</button>
+          <button className="button is-primary is-small" onClick={() => { toggleModal(true) }}>
+            Help
+            <span className="icon is-small" style={{ marginLeft: '5px'}}>
+              <i className="far fa-question-circle"></i>
+            </span>
+          </button>
         </div>
         <CellList/>
       </div>
